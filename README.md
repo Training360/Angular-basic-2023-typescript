@@ -1,7 +1,7 @@
 # TypeScript basic course
 
 ## Summary
-- Fix the Game!
+- This is a sandbox to practicing typesctipt programming.
 
 ## Running the game
 - Clone this repository.
@@ -12,7 +12,14 @@
 - Open the game in the browser: `http://localhost:4300`
 
 ## Lessons
-A feladatokat négy fájlban találjátok:
+- Bevezetés: [Piece](src\Piece.ts)
+- Típusok: [TypeList](type-list.ts)
+- Tömbök: [TypeList](type-list.ts)
+- Ojbektumtípusok: [TypeList](type-list.ts)
+- Speciális típusok: [Constants](src\constants.ts)
+
+## OOP
+Fix them:
 - `src/Utils.ts`
 - `src/Piece.ts`
 - `src/Level.ts`
