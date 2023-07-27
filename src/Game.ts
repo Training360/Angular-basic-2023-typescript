@@ -229,8 +229,8 @@ export default class Game extends BaseGame {
   getSpeed (): number {
     const initialSpeed = 200;
     const calculated = (initialSpeed - this.growth * 0.5) + this.debugSpeed + this.keyHeld;
-
-    return Utils.bound(calculated, FASTEST, SLOWEST);
+    return initialSpeed;
+    // return Utils.bound(calculated, FASTEST, SLOWEST);
   }
 
   updateScore (won: number): number {
@@ -461,7 +461,7 @@ export default class Game extends BaseGame {
   }
 
   drawHitboxes () {
-    document.querySelectorAll('.hitbox').forEach(Utils.removeNode);
+    // document.querySelectorAll('.hitbox').forEach(Utils.removeNode);
 
     Locations.getAll().forEach((a, k) => {
       const [x, y] = k.split(':');
@@ -507,10 +507,6 @@ export default class Game extends BaseGame {
    * 4. a this.gridVisible értékét állítsd false-ra
    */
   removeGrid(): void {
-    const grids = document.querySelectorAll('.vertical-grid és .horizontal-grid');
-    for ( const grid of Array.from(grids) ) {
-      Utils.removeNode(grid);
-    }
-    this.gridVisible = false;
+    
   }
 }

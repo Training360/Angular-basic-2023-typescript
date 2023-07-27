@@ -12,11 +12,14 @@
 - Open the game in the browser: `http://localhost:4300`
 
 ## Lessons
-- Bevezetés: [Piece](src\Piece.ts)
+- Bevezetés: [Piece](src/Piece.ts)
 - Típusok: [TypeList](type-list.ts)
 - Tömbök: [TypeList](type-list.ts)
 - Ojbektumtípusok: [TypeList](type-list.ts)
-- Speciális típusok: [Constants](src\constants.ts)
+- Speciális típusok: [Constants](src/constants.ts)
+- OOP alapelvek: [Utils](src/Utils.ts)
+- Öröklődés: [Utils](src/Utils.ts)
+- Összefoglaló: [Game](src/Game.ts)
 
 ## OOP
 Fix them:
