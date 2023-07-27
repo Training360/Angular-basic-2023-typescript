@@ -1,46 +1,25 @@
-# Snake Game for Practicing TypeScript
+# TypeScript basic course
 
-## Leírás
-Pótold a játék hiányzó részeit!
+## Summary
+- Fix the Game!
 
-## Csapatmunka
-Csapatban dolgozzatok; négy olyan fájl van a játékban, ahol ki kell egészíteni 
-a kódot. A csapat minden tagja külön fájlban dolgozzon, és __soha ne írjatok 
-bele__ a másiknak kiosztott fájlba, így nem fog conflict létrejönni.
+## Running the game
+- Clone this repository.
+- Go into the local repository: `cd TypeScript-basic-t360-2023`
+- Set the workspace: `code . -r`
+- Install dependencies: `npm i`
+- Start the server: `npm start`
+- Open the game in the browser: `http://localhost:4300`
 
-## GitHub
-- A csapat egyik tagja lépjen be először a Classroomba a megadott linkkel. 
-- Hozzon létre egy új teamet, majd lépjen be ebbe a teambe.
-- A többiek már a meglévő teambe lépjenek be.
-- Beszéljétek meg, hogy ki melyik feladaton szeretne dolgozni.
-- Rendszeresen commitoljatok és push-oljatok.
-
-## Program futtatása
-- Klónozd le a gépedre a GitHub-repót, amely a feladat elfogadása után létrejön.
-- Figyelem, itt nem lesz mindenkinek saját repója, team-repo lesz.
-- Állítsd be a code gyökerének a mappát: `code . -r`
-- Telepítsd a függőségeket: `npm i`
-- Indítsd el a szervert: `npm run serve`
-- Nyisd meg a böngészőben a következő oldalt: `http://localhost:4200`
-
-## Feladatok
+## Lessons
 A feladatokat négy fájlban találjátok:
 - `src/Utils.ts`
 - `src/Piece.ts`
 - `src/Level.ts`
 - `src/Game.ts`
 
-> A feladatok kommentekkel vannak jelölve, amelyek így kezdődnek: FELADAT!
-
-## Extra feladatok
-- Oldjátok meg, hogy a piros alma felvétele csak 1 pontot érjen.
-- Az arany alma felvételénél vonjon le a játék 2 pontot.
-- A kígyó ne tudjon jobbra fordulni.
-- Ha 20 pontot elért a játékos, nullázódjanak a pontjai.
-
-## Csapatmunka - Javaslatok
-- Hozzatok össze egy kis videókonferenciát, és mutatkozzatok be röviden egymásnak.
-- Mindenki válaszoljon három kérdésre:
-1. Kedvenc film
-1. Kedvenc étel
-1. Kedvenc ország
+## Extra tasks
+- The gamer gets only 1 point when he/she takes a red apple.
+- Decrease gamer's points with 2, when he/she takes a gold apple.
+- Snake cannot turn to right.
+- Gamers lose their points in every 20 points.

@@ -472,4 +472,45 @@ export default class Game extends BaseGame {
       this.garden.append(hitbox);
     });
   }
+
+  /**
+     * @returns {number}
+     * Egy random számot szorozz meg a this.levels.length-szel, 
+     * majd kerekítsd lefelé, ez lesz az index.
+     * Majd térj vissza a this.levels tömbnek ezzel az indexével.
+     */
+  getRandomLevel(): Level {
+    const index = Math.floor(Math.random() * this.levels.length);
+    return this.levels[index];
+  }
+
+  /**
+   * @returns {boolean}
+   * 1. hozz létre egy chance nevű változót 5 értékkel
+   * 2. hozz létre egy pick nevű változót, értéke random szám szorozva 100-zal
+   * 3. térj vissza true értékkel, ha a pick kisebb, mint a chance
+   */
+  mayIHaveGoldenApple(): boolean {
+    const chance = 5;
+    const pick = Math.random() * 100;
+    return pick < chance;
+  }
+
+  /**
+   * @returns {void}
+   * A metódus feladatai:
+   * 1. keresd meg a DOM-ban az összes .vertical-grid és .horizontal-grid 
+   * elemet
+   * 2. mentsd el őket egy grids nevű változóba
+   * 3. járd be a tömböt, és minden elemére hívd meg a Utils.removeNode 
+   * metódust, hogy eltávolítsd őket az oldalról
+   * 4. a this.gridVisible értékét állítsd false-ra
+   */
+  removeGrid(): void {
+    const grids = document.querySelectorAll('.vertical-grid és .horizontal-grid');
+    for ( const grid of Array.from(grids) ) {
+      Utils.removeNode(grid);
+    }
+    this.gridVisible = false;
+  }
 }
